@@ -1,0 +1,49 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    margin: -1px;
+}
+
+section {
+    h2.headline {
+        position: relative;
+        line-height: 1;
+        letter-spacing: -0.05em;
+        font-size: calc(30px + 30 * ((100vw - 961px) / 959));
+
+        strong {
+            font-family: 'DaVinci';
+        }
+    }
+
+    h2.section_title {
+        font-size: calc(307.5px + 307.5 * ((100vw - 961px) / 959));
+        white-space: nowrap;
+        letter-spacing: -0.03em;
+        font-family: 'DaVinci';
+    }
+
+    .section_txt {
+        letter-spacing: -0.02em;
+    }
+}
+
+.col {
+    width: calc(180px + 180 * ((100vw - 961px) / 959));
+}
+
+
+@media (max-width: 900px) {
+    .col {
+        width: auto;
+    }
+
+    section {
+        h2.headline {
+            font-size: 32px;
+        }
+    }
+}
